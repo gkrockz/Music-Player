@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Music Player" content="listen to curated list of music">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FA-CDN for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="player-container">
+
+        <!-- Song -->
+        <div class="img-container">
+            <img src="img/song1.jpg" alt="Album Art">
+        </div>
+        <h2 id="title">Fetching title.. </h2>
+        <h3 id="album">Fetching Album..</h3>
+        <audio src="music/song1.mp3"></audio>
+
+        <!-- Song Progress Tracker -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">5:01</span>
+            </div>
+        </div>
+
+        <!-- Music Control Buttons -->
+        <div class="player-controls">
+            <i class="fas fa-step-backward fa-3x" id="prev" title="Previous"></i>
+            <i class="fas fas fa-play" id="play" title="Play"></i>
+            <i class="fas fa-step-forward fa-3x" id="next" title="Next"></i>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
