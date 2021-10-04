@@ -35,6 +35,11 @@ const songs = [
     name: 'song5',
     displayName: 'Beast BGM',
     album: 'Beast',
+  }, 
+  {
+    name: 'song6',
+    displayName: 'Quit Pannuda',
+    album: 'Master',
   },
 ];
 
@@ -42,7 +47,7 @@ function loadSong(song) {
   title.textContent = song.displayName;
   album.textContent = song.album;
   music.src = `music/${song.name}.mp3`;
-  image.src = `img/${song.name}.jpg`;
+  image.src = `image/${song.name}.jpg`;
 }
 
 let songIndex = 0;
